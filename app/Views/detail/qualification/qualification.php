@@ -38,10 +38,10 @@
                     <div class="row">
                         <div class="form-group">
                             <label for="marticulation">10th Marks:</label>
-                            <input type="text" class="form-control" name="marticulation" placeholder="Enter 10th marks">
+                            <input type="text" class="form-control" name="matriculation" placeholder="Enter 10th marks">
                             <?php
-                            if (isset($validation) && $validation->hasError('marticulation')) { ?>
-                                <p class='text-danger'>"<?php echo $validation->getError('marticulation'); ?></p>
+                            if (isset($validation) && $validation->hasError('matriculation')) { ?>
+                                <p class='text-danger'>"<?php echo $validation->getError('matriculation'); ?></p>
                             <?php } ?>
                         </div>
                     </div>
