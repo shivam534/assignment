@@ -13,7 +13,7 @@ class Qual extends BaseController
         helper('form');
         if ($this->request->getMethod() == 'post') {
             $input = $this->validate([
-                'marticulation' => 'required',
+                'matriculation' => 'required',
                 'intermediate' => 'required',
                 'graduation' => 'required',
                 'post_graduation' => 'required',
@@ -22,7 +22,7 @@ class Qual extends BaseController
             if ($input == true) {
                 $model = new QualificationModel();
                 $model->save([
-                    'class10' => $this->request->getPost('marticulation'),
+                    'class10' => $this->request->getPost('matriculation'),
                     'class12' => $this->request->getPost('intermediate'),
                     'graduation' =>  $this->request->getPost('graduation'),
                     'post_graduation' =>  $this->request->getPost('post_graduation'),
