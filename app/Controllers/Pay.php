@@ -29,7 +29,7 @@ class Pay extends BaseController
                 ]);
 
                 $session->setFlashdata('success', 'thnk,record added successfully');
-                return redirect()->to('pay');
+                return redirect()->to('home');
             } else {
                 $data['validation'] = $this->validator;
             }
